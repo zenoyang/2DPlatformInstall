@@ -6,14 +6,14 @@ sudo apt-get install build-essential libboost-all-dev qt4-dev-tools libaudio-dev
 
 # 版本配置
 RCSSSERVER="rcssserver-15.4.0"
-RCSSMONITOR="rcssmonitor-15.2.0"
+RCSSMONITOR="rcssmonitor-15.2.1"
 RCSSLOGPLAYER="rcsslogplayer-15.2.0"
 LIBRCSC="librcsc-4.1.0"
 SOCCERWINDOW="soccerwindow2-5.1.1"
 FEDIT="fedit2-0.0.1"
 
 # 添加安装项
-arr=($RCSSMONITOR $RCSSLOGPLAYER $LIBRCSC $SOCCERWINDOW $FEDIT)
+arr=($RCSSSERVER $RCSSMONITOR $RCSSLOGPLAYER $LIBRCSC $SOCCERWINDOW $FEDIT)
 
 # 解压、配置、编译、安装、删除安装包
 for var in ${arr[@]}; 
