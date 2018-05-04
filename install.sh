@@ -7,7 +7,7 @@ sudo apt-get install build-essential libboost-all-dev qt4-dev-tools libaudio-dev
 # 版本配置
 RCSSSERVER="rcssserver-15.4.0"
 RCSSMONITOR="rcssmonitor-15.2.1"
-RCSSLOGPLAYER="rcsslogplayer-15.2.0"
+RCSSLOGPLAYER="rcsslogplayer-15.2.1"
 LIBRCSC="librcsc-4.1.0"
 SOCCERWINDOW="soccerwindow2-5.1.1"
 FEDIT="fedit2-0.0.1"
@@ -22,5 +22,8 @@ do
 done
 
 # 添加rcsc动态库路径
-sudo echo "/usr/local/lib" >> /etc/ld.so.conf
+# sudo echo "/usr/local/lib" >> /etc/ld.so.conf
+echo "include /etc/ld.so.conf.d/*.conf
+/usr/local/lib" > ld.so.conf
+sudo mv ld.so.conf /etc
 sudo ldconfig
