@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get install build-essential libboost-all-dev qt4-dev-tools libaudio-dev libgtk-3-dev libxt-dev flex bison libbison-dev libqt4-dev libxpm-dev libxt-dev libpng-dev libglib2.0-dev libfreetype6-dev libxrender-dev libxext-dev libfontconfig-dev libxi-dev -y
 
 # 版本配置
-RCSSSERVER="rcssserver-15.4.0"
+RCSSSERVER="rcssserver-15.5.0"
 RCSSMONITOR="rcssmonitor-15.2.1"
 RCSSLOGPLAYER="rcsslogplayer-15.2.1"
 LIBRCSC="librcsc-4.1.0"
@@ -13,7 +13,7 @@ SOCCERWINDOW="soccerwindow2-5.1.1"
 FEDIT="fedit2-0.0.1"
 
 # 添加安装项
-arr=($RCSSSERVER $RCSSMONITOR $RCSSLOGPLAYER $LIBRCSC $SOCCERWINDOW $FEDIT)
+arr=($RCSSSERVER $RCSSMONITOR $RCSSLOGPLAYER $LIBRCSC $SOCCERWINDOW)
 
 # 解压、配置、编译、安装、删除安装包
 for var in ${arr[@]}; 
